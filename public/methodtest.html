@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Blog" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Dylan Ellsworth" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>methodtest</title>
+	<link href="images/favicon.ico" rel="icon" />
+    <script type="module" src="js/methodtest.js"></script>
+</head>
+
+<body>
+    <header>
+       <h1>Method Test</h1> 
+    </header>
+    <button id="postBtn">POST</button>
+    <button id="getBtn">GET</button>
+    <button id="putBtn">PUT</button>
+    <button id="deleteBtn">DELETE</button>
+    <hr>
+    <form id="methodForm" action="https://httpbin.org/get" method="GET">
+        <div>
+            <label for="id">id:</label>
+            <input name="id">
+        </div>
+        <div>
+            <label for="article_name">article name:</label>
+            <input name="article_name">
+        </div>
+        <div>
+            <label for="article_body">article body:</label>
+            <textarea name="article_body"></textarea>
+        </div>
+        <label for="formOut">Response:</label>
+        <output name="formOut">
+            <pre id="responseText"></pre>
+        </output>
+    </form>
+</body>
+
+</html>
