@@ -8,14 +8,32 @@ let responseText = document.getElementById('responseText');
 
 // Handles Form HTTP Requests
 function sendFormRequest(methodInput, actionInput) {
-    methodForm.method = methodInput;
-    methodForm.action = actionInput;
+    let formInput = new Object();
+    formInput.id = document.getElementById('id').value;
+    formInput.article_name = document.getElementById('article_name').value;
+    formInput.article_body = document.getElementById('article_body').value;
+    formInput.date = new Date();
+    let payload = null
+    switch(methodInput) {
+        case 'POST':
+            payload = JSON.stringify(formInput);
+            break;
+        case 'GET':
+            actionInput += '?id='+formInput.id;
+            break;
+        case 'PUT':
+            actionInput += '?id='+formInput.id;
+            delete formInput.id;
+            payload = JSON.stringify(formInput);
+            break;
+        case 'DELETE':
+            actionInput += '?id='+formInput.id
+            break;
+    }
     let xhr = new XMLHttpRequest();
     xhr.onload = function(){displayResponse(xhr.responseText)};
     xhr.open(methodInput, actionInput);
-    let formObj = new FormData(methodForm);
-    formObj.append('date', new Date());
-    xhr.send(formObj);
+    xhr.send(payload);
 }
 
 // Updates response output from request
