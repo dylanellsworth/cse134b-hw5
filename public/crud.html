@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Blog" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Dylan Ellsworth" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Blog</title>
+	<link href="images/favicon.ico" rel="icon" />
+</head>
+
+<body>
+    <header>
+       <h1>Blog</h1> 
+    </header>
+    <div id="createPostContainer">
+        <button id="createBlogPostButton">
+            Create a Blog Post
+        </button>
+    </div>
+	<ul id="blogPostList">
+    </ul>
+
+    <dialog id="createPostDialog" class="postMod">
+        <h2>Create Blog Post</h2>
+        <form method="dialog" style="margin-bottom: 20px;">
+            <label for="createTitleInput">Title</label><br>
+            <input type="text" id="createTitleInput" name="createTitleInput"><br>
+            <label for="DateInput">Date</label><br>
+            <input type="date" id="createDateInput" name="createDateInput"><br>
+            <label for="createSummaryInput" style="height: 200;">Summary</label><br>
+            <textarea id="createSummaryInput" name="createSummaryInput" rows="3" wrap="hard"></textarea><br>
+        </form>
+        <button id="createDialogCancelButton">Cancel</button>
+        <button id="createDialogConfirmButton">Add New Blog Post</button>
+    </dialog>
+
+    <dialog id="editPostDialog" class="postMod">
+        <h2>Edit Blog Post</h2>
+        <form method="dialog" style="margin-bottom: 20px;">
+            <label for="editTitleInput">Title</label><br>
+            <input type="text" id="editTitleInput" name="editTitleInput"><br>
+            <label for="editDateInput">Date</label><br>
+            <input type="date" id="editDateInput" name="editDateInput"><br>
+            <label for="editSummaryInput" style="height: 200;">Summary</label><br>
+            <textarea id="editSummaryInput" name="editSummaryInput" rows="3" wrap="hard"></textarea><br>
+        </form>
+        <button id="editDialogCancelButton">Cancel</button>
+        <button id="editDialogSaveButton">Save</button>
+    </dialog>
+
+    <dialog id="confirmDeleteDialog">
+        <p>Are you sure you want to delete this post?</p><br>
+        <button id="confirmCancelButton">Cancel</button>
+        <button id="confirmOkButton">Ok</button>
+    </dialog>
+    
+    <script type="module" src="js/blog.js"></script>
+    <script type="text/javascript" src="js/purify.min.js"></script>
+    <script type="module">
+        "import {deleteBlogElement} from 'js/blog.js';"
+    </script>
+</body>
+
+</html>

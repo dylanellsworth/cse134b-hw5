@@ -1,0 +1,129 @@
+body {
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+header {
+    background-color: rgb(22, 65, 94);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    height: 150px;
+    border-style: double;
+}
+h1 {
+    display: inline-block;
+}
+h2 {
+    background: rgb(115, 129, 177);
+    color: rgb(12, 12, 43);
+    border-style: groove;
+    height: 50px;
+    width: 100%;
+    display: inline-block;
+    padding-top: 20px;
+    margin-bottom:5px;
+    margin-top: 0px;
+    font-size: xx-large;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding-right: 50px;
+}
+li {
+    background-color: white;
+    border-style: double;
+    margin: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 7px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+dialog {
+    width: 50vw;
+}
+label {
+    width: 100%;
+}
+input {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+}
+#createBlogPostButton {
+    font-size: 25px;
+    border-radius: 5px;
+}
+#createPostContainer {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+    left: 50%;
+}
+.pDate {
+    border-style:outset;
+    margin-top: 0;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 100%;
+}
+.pSummary {
+    height: auto;
+    max-width: 95%;
+    display: flexbox;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 25px;
+}
+.editButton {
+    height: 44px;
+    width: 44px;
+    background: url(/public/images/edit.png) no-repeat;
+    font-size: 0px;
+    border-style: none;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.deleteButton {
+    height: 44px;
+    width: 44px;
+    background: url(/public/images/delete.png) no-repeat;
+    font-size: 0px;
+    border-style: none;
+    cursor: pointer;
+}
+#confirmDeleteDialog {
+    text-align: center;
+    font-size: 20px;
+    width: 20%;
+}
+#confirmDeleteDialog button {
+    text-align: center;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+}
+.postMod {
+    text-align: center;
+    width: 350px;
+}
+.postMod form {
+    text-align: left;
+}
+.postMod button {
+    text-align: center;
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}

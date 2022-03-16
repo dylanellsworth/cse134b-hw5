@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Custom Dialogs" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Dylan Ellsworth" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Custom Dialogs</title>
+	<link href="images/favicon.ico" rel="icon" />
+</head>
+
+<body>
+    <h1>Custom Dialogs</h1>
+	<button id="alertButton">
+        Alert
+    </button>
+    <button id="confirmButton">
+        Confirm
+    </button>
+    <button id="promptButton">
+        Prompt
+    </button>
+    <dialog id="alertDialog">
+        <p>Alert pressed</p>
+        <button id="alertOkButton">Ok</button>
+    </dialog>
+    <dialog id="confirmDialog">
+        <p>Do you confirm this?</p><br>
+        <button id="confirmCancelButton">Cancel</button>
+        <button id="confirmOkButton">Ok</button>
+    </dialog>
+    <dialog id="promptDialog">
+        <p></p>
+        <label for="promptInput">What is your name?</label><br>
+        <input type="text" id="promptInput" name="promptInput"><br>
+        <button id="promptCancelButton">Cancel</button>
+        <button id="promptOkButton">Ok</button>
+    </dialog>
+    <hr style="height: 2px; background-color: #000000; margin-bottom: 20px;">
+    <output id="outputRes" style="font-size: larger; border-style: double; padding: 5px; margin-top: 30px; visibility: hidden;"></output>
+    <script type="text/javascript" src="js/customdialog.js"></script>
+    <script type="text/javascript" src="js/purify.min.js"></script>
+</body>
+
+</html>

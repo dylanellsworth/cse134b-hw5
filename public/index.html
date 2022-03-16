@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Dylan Ellsworth's personal portfolio website" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Dylan Ellsworth" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dylan Ellsworth - CSE 134B</title>
+	<link href="images/favicon.ico" rel="icon" />
+	<link href="styles/main.css" rel="stylesheet" />
+	<style>
+		canvas {border:1px solid #000000;}
+	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6L3LLJ7QGW"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-6L3LLJ7QGW');
+	</script>
+</head>
+
+<body>
+	<header>
+		<div id="intro">
+			<h1>DYLAN ELLSWORTH</h1>
+			<div id="socialLinks">
+				<a href="mailto:djellswo@ucsd.edu">
+					<img id="emailIcon" alt="email" src="images/email_icon_dark.png">
+				</a>
+				<a href="https://www.linkedin.com/in/dylan-ellsworth-5047b3178/">
+					<img id="linkedinIcon" alt="linkedin profile" src="images/linkedin_icon_dark.png">
+				</a>
+				<a href="https://github.com/dylanellsworth/">
+					<img id="githubIcon" alt="github profile" src="images/github_icon_dark.png">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#aboutMe">About Me</a></li>
+					<li><a href="#resume">Resume and Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#fun">Fun</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="aboutMe">
+			<div class="container">
+				<h2>About Me</h2>
+				<img src="images/DylanTetons.JPG" alt="Picture of Dylan" style="border-radius: 50%; display: inline-block; margin-left: 5;" draggable="false"/>
+				<div id="aboutContents" style="height: 80%; margin-top: 150px; vertical-align: top; display: inline-block; text-align: left; margin-left: 7%;">
+					<p style="font-size: 30px; font-weight: bold; color: rgb(22, 65, 94);">Hey, I'm Dylan!<br>
+					I love to build stuff.</p>
+				</div>
+				<p><b>4th year Computer Science Student</b> at University of California San Diego</p>
+				<p><b>Software Engineering Intern</b> at General Atomics</p>
+			</div>
+		</section>
+		<hr/>
+		<section id="resume">
+			<div class="container">
+				<h2>Resume and Skills</h2>
+				<button>Download Resume</button>
+				<h3>Skills</h3>
+				<ol>
+					<li>Leadership</li>
+					<li>Communication</li>
+					<li>Problem solving</li>
+					<li>Critical Thinking</li>
+				</ol>
+				<h4>Languages</h4>
+				<ol>
+					<li>Python</li>
+					<li>Java</li>
+					<li>C/C++</li>
+					<li>JavaScript</li>
+				</ol>
+			</div>
+		</section>
+		<hr/>
+		<section id="projects">
+			<div class="container">
+				<h2>Projects</h2>
+				<div class="project">
+					<h3>Study Partern Mobile Application</h3>
+					<p>
+						Worked on a software development team for 10 weeks and created a mobile application
+						designed to intelligently match students with potentieal study partners using React 
+						Native, Firebase, and Node.js
+					</p>
+				</div>
+				<div class="project">
+					<h3>MNIST Machine Learning Models</h3>
+					<p>
+						Used pytorch to create a variety of machine learning algorithms to train and predict 
+						on the MNIST dataset. In order to better understand the underlying fundamentals 
+						of machine learning, I implemented K-Nearest Neighbors algorithm, gradient descent, 
+						and neural nets. These models were able to correctly to correctly learn patterns and 
+						predict digits 0-9 from hand drawn images. 
+					</p>
+				</div>
+				<div class="project">
+					<h3>Huffman Encoding</h3>
+					<p>
+						Implemented an optimized Huffman encoding and decoding algorithm using bitwise logic
+						and file i/o with C++
+					</p>
+				</div>
+			</div>
+		</section>
+		<hr/>
+		<section id="blog">
+			<div class="container">
+				<h2>Blog</h2>
+				<p>No posts yet</p>
+				<h3>Enter your email to recieve notifications for blog posts</h3>
+				<form>
+					<label for="emailInput">Email Address:</label>
+					<input type="text" id="emailInput" name="emailInput">
+					<input type="submit" value="submit">					
+				</form>
+				<a href="./styledcrud.html">Click to view Blog Page</a>
+			</div>
+		</section>
+		<hr/>
+		<section id="fun">
+			<div class="container">
+				<h2>Fun</h2>
+				<p>
+					This section includes elements that are required for the assignment, but are not relavant to the 
+					site as a whole.
+				</p>
+				<details>
+					<summary>Expand to view experimental elements</summary>
+					<h3>Mason Ho in Tahiti</h3>
+					<iframe height="480" width="500" src="https://youtube.com/embed/_WeT9XYy8HU"></iframe>
+					<h3>Sunset on Catalina Island</h3>
+					<video controls height="393" width="700" style="width: 50%;">
+						<source src="videos/Catalina.mp4" type="video/mp4" />
+						<div class="error">Your browser does not support the video tag.</div>
+					</video>
+					<h3>Picture of Needles Highway</h3>
+					<picture>
+						<img src="images/needles.jpg" alt="Picture of Needles rock formations in South Dakota">
+					</picture>
+					<h3>Sample Audio Clip</h3>
+					<audio controls>
+						<source src="sounds/sample.mp3" type="audio/mp3">
+					</audio>
+					<h3>Input Field Test</h3>
+   		     		<canvas id="testCanvas" width="200" height="100">
+       			  		 Your browser does not support the HTML canvas tag.</canvas>
+          			<script>
+          				var c = document.getElementById("testCanvas");
+          				var ctx = c.getContext("2d");
+         				ctx.moveTo(0,0);
+         				ctx.lineTo(200,100);
+         				ctx.moveTo(200,0);
+        				ctx.lineTo(0,100);
+          				ctx.moveTo(100,0);
+          				ctx.lineTo(100,100);
+          				ctx.stroke();
+          			</script>
+					<table>
+						<caption>Different inline tags</caption>
+						<colgroup>
+							<col span="1" class="word">
+							<col span="3" class="styletag">
+						</colgroup>
+						<tr>
+							<th>Word</th>
+							<th>Emphasis</th>
+							<th>Italics</th>
+							<th>Strong</th>
+						</tr>
+						<tr>
+							<td>test</td>
+							<td><em>test</em></td>
+							<td><i>test</i></td>
+							<td><strong>test</strong></td>
+						</tr>
+					</table>
+					<p>This was created using the html <code>table</code> tag</p>
+					<svg width="200" height="200">
+						<circle cx="100" cy="100" r="90" stroke="black" stroke-width="5" fill="purple" />
+					</svg>
+					<pre>Wow!       look at this whitespace</pre>
+					<label for="food-select">Choose your favorite food:</label>
+					<select id="food-select">
+						<optgroup label="Meats">
+							<option>Steak</option>
+							<option>Chicken</option>
+							<option>Fish</option>
+						</optgroup>
+						<optgroup label="Soups">
+							<option>Clam Chowder</option>
+							<option>Tomato</option>
+							<option>Miso</option>
+						</optgroup>
+					</select>
+					<form>
+						<fieldset>
+							<legend>Select your prefered mode of transportation</legend>
+							<input type="radio" id="walk" name="transportation">
+							<label for="walk">walk</label>
+							<input type="radio" id="bike" name="transportation">
+							<label for="bike">bike</label>
+							<input type="radio" id="bus" name="transportation">
+							<label for="bus">bus</label>
+							<input type="radio" id="car" name="transportation">
+							<label for="car">car</label>
+						</fieldset>
+					</form>
+					<p>
+						Here is a sample of text inside a paragraph tag. 
+					</p>
+					<aside>
+						This is an aside to the paragraph.
+					</aside>
+					<label for="beach">Select a Beach in San Diego:</label>
+					<input list="beaches" id="beach" name="beach"/>
+					<datalist id="beaches">
+						<option value="Mission Beach"></option>
+						<option value="Pacific Beach"></option>
+						<option value="La Jolla Shores"></option>
+						<option value="Torrey Pines"></option>
+						<option value="Del Mar"></option>
+					</datalist>
+					<br/>
+					<textarea id="story" name="story" rows="5" cols="60">Tell me a story.</textarea>
+					<br/>
+					<details>
+						<summary>Expand for more information</summary>
+						More information.
+					</details>
+					<template>
+						<h4>A new template heading</h4>
+						<p>This is a template paragraph</p>
+					</template>
+					<figure>
+						<img src="images/rainforest.jpeg" alt="Rainforest on Oahu">
+						<figcaption>A photo of the forest on the island of Oahu</figcaption>
+					</figure>
+				</details>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<hr/>
+		<p>Created by Dylan Ellsworth</p>
+	</footer>
+</body>
+
+</html>
