@@ -23,3 +23,9 @@ background images was incorrect.
 I updated the link to the google analytics script on my main page
 that allows me to gague engagement and other statistics about traffic 
 on my site. 
+
+-Changed ordering of my nav bar and social links to be more user friendly-
+I switched the positioning and spacing of my nav bar and my social links. 
+This makes more sense to have the nav bar closer to the top and more 
+accessible for users to interact with, since this is the location that they
+expect the nav bar to be located. 

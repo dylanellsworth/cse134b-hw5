@@ -59,7 +59,7 @@ h1 {
     display: flex;
     column-gap: 5%;
     justify-content: center;
-    padding-top: 2%;
+
 }
 #emailIcon:hover {
     content: url(../images/email_icon_light.png);
