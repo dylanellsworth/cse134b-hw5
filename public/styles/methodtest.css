@@ -11,10 +11,12 @@ body {
 form {
     border-style:ridge;
     margin-top: 20px;
+    padding-top: 10px;
 }
 input, textarea {
     font-size: 15px;
     width: 500px;
+    margin-bottom: 10px;
 }
 output {
     text-align: left;
