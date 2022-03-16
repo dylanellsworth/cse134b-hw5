@@ -37,6 +37,10 @@ footer {
 footer p{
     color: var(--footer-color);
 }
+.socialIcon {
+    width: 72px;
+    height: 72px;
+}
 #intro {
     height: 50%;
     width: 95%;
