@@ -20,7 +20,7 @@ header {
     margin-bottom: 1%;
 }
 body {
-    background: url(/public/images/tile-background.jpeg);
+    background: url(../images/tile-background.jpeg);
     /* cite: https://imgur.com/gallery/LMVuA */
     background-repeat: repeat-x;
     background-size: cover;
