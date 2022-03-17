@@ -148,7 +148,8 @@ async function editBlogElement (blogElementId) {
     editDialogInstance.name = blogElementId;
     editDialogInstance.showModal(); 
 
-    document.getElementById('editDialogSaveButton').addEventListener('click', function() {
+    document.getElementById('editDialogSaveButton').addEventListener('click', async function() {
+        let postObj = await getFireDoc(blogElementId);
         let postLi = document.getElementById(blogElementId);
         let inputPostTitle = document.getElementById('editTitleInput').value;
         let inputPostDate = document.getElementById('editDateInput').value;
@@ -159,7 +160,7 @@ async function editBlogElement (blogElementId) {
                 date: Timestamp.fromDate(new Date(inputPostDate)),
                 body: inputPostSummary
             }
-            setDoc(doc(db, "blogPosts", inputPostId), blogPostData);
+            setDoc(doc(db, "blogPosts", blogElementId), blogPostData);
             postObj.date = new Date(inputPostDate).getTime();
             removeAllposts();
             renderPosts();
